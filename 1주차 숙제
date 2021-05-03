@@ -37,13 +37,23 @@ fn main() {
     예를 들어 1234567 을 터미널에서 입력했으면 000000000001,234,567 와 같이 출력하세요.
     
 -   format!("{:04}", 42); 으로   출력 포맷 정의
--   io::stdin().read_line(&mut guess)     이 input 함수
+-   io::stdin().read_line(&mut guess)     파이썬의 input 함수 비슷
     .expect("Can't read typed number");
     
     
+use std::io;
+fn main() {
     
-    
-    
-    
-    
+    let mut a = String::new();
+
+    println!("숫자를 입력하세요");
+
+    io::stdin().read_line(&mut a)
+    .expect("Can't read typed number");
+
+    println!("fuck {}", a);
+  
+
+}
+ 
 -------------------------------------------------------------------------------------------------------------------------------    
